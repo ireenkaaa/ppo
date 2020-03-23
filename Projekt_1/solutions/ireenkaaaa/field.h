@@ -6,8 +6,8 @@
 #define PROJECT_FIELD_H
 struct Field
 {
-    bool hasMine;
-    bool hasFlag;
-    bool isRevealed;
+    bool hasMine=false;
+    bool hasFlag=false;
+    bool isRevealed=false;
 };
 #endif //PROJECT_FIELD_H

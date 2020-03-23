@@ -1,3 +1,6 @@
+//
+// Created by irena on 16.03.2020.
+//
 
 #ifndef PROJECT_MINESWEEPERBOARD_H
 #define PROJECT_MINESWEEPERBOARD_H
@@ -22,14 +25,15 @@ public:
     GameState getGameState() const;
 
 private:
-    Field board_[100][100];
-    int width_;
-    int height_;
-    int number_of_mines_;
+    Field board[100][100];
+    int width;
+    int height;
+    int number_of_mines;
     GameState game_status;
-    GameMode mode_;
-    bool isFirstMove();
+    GameMode mode;
+    bool isFirstMove() const;
     bool whenWin() const;
+    bool correctValue(int x, int y) const;
 
 };
 #endif //PROJECT_MINESWEEPERBOARD_H
